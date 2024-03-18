@@ -8,9 +8,11 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
 
+  url = 'http://localhost:8080/api/auth/sighup';
+
   constructor(private httpClient : HttpClient) {  }
 
   sighup(signupRequestPayload : SignuprequestPayload): Observable<any>{
-    return this.httpClient.post('http://localhost:8080/api/auth/sighup', signupRequestPayload, {responseType : 'text'});
+    return this.httpClient.post(this.url, signupRequestPayload, {responseType : 'text'});
   }
 }
