@@ -19,9 +19,10 @@
         <span>
             <a class="btnCommments" role="button">
                 <fa-icon [icon]="faComments"></fa-icon>
-                Comments({{post.commentNum}})
+                Comments({{post.commentCount}})
             </a>
-            <button class="login" (click)="goToPost(post.id)">
+            <!-- <button class="login" (click)="goToPost(post.id)"> -->
+            <button class="login">
                 Read Post
             </button>
         </span>

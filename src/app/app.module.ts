@@ -13,7 +13,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule, ToastrService } from 'ngx-toastr';
 import { HomeComponent } from './home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { PostTitleComponent } from './shared/post-title/post-title.component';
 import { VoteButtonComponent } from './shared/vote-button/vote-button.component';
 import { SideBarComponent } from './shared/side-bar/side-bar.component';
 import { SubredditSideBarComponent } from './shared/subreddit-side-bar/subreddit-side-bar.component';
@@ -26,7 +25,6 @@ import { PostTileComponent } from './shared/post-tile/post-tile.component';
     LoginComponent,
     SignupComponent,
     HomeComponent,
-    PostTitleComponent,
     VoteButtonComponent,
     SideBarComponent,
     SubredditSideBarComponent,

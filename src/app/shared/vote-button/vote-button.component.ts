@@ -12,6 +12,8 @@ export class VoteButtonComponent implements OnInit{
   post!: PostModel;
   faArrowUp = faArrowUp;
   faArrowDown = faArrowDown;
+  upvoteColor!: string;
+  downvoteColor!: string;
 
   constructor() {
   }
