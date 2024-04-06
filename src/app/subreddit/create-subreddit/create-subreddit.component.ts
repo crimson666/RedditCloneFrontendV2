@@ -10,8 +10,8 @@ import { Router } from '@angular/router';
   styleUrl: './create-subreddit.component.css'
 })
 export class CreateSubredditComponent implements OnInit{
-  createSubredditForm!: FormGroup;
-  subredditModel!: SubredditModel;
+  createSubredditForm: FormGroup;
+  subredditModel: SubredditModel;
   title = new FormControl('');
   description = new FormControl('');
 
@@ -34,14 +34,14 @@ export class CreateSubredditComponent implements OnInit{
     this.router.navigateByUrl('/');
   }
 
-  // createSubreddit() {
-  //   this.subredditModel.name = this.createSubredditForm.get('title').value;
-  //   this.subredditModel.description = this.createSubredditForm.get('description').value;
-  //   this.subredditService.createSubreddit(this.subredditModel).subscribe(data => {
-  //     this.router.navigateByUrl('/list-subreddits');
-  //   }, error => {
-  //     console.log('Error occurred');
-  //   })
-  // }
+  createSubreddit() {
+    this.subredditModel.name = this.createSubredditForm.get('title')?.value;
+    this.subredditModel.description = this.createSubredditForm.get('description')?.value;
+    this.subredditService.createSubreddit(this.subredditModel).subscribe(data => {
+      this.router.navigateByUrl('/list-subreddits');
+    }, error => {
+      console.log('Error occurred');
+    })
+  }
 
 }
