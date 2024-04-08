@@ -4,11 +4,11 @@ import { SubredditService } from '../subreddit.service';
 import { throwError } from 'rxjs';
 
 @Component({
-  selector: 'app-list-subreddits',
-  templateUrl: './list-subreddits.component.html',
-  styleUrls: ['./list-subreddits.component.css']
+  selector: 'app-list-subreddit',
+  templateUrl: './list-subreddit.component.html',
+  styleUrls: ['./list-subreddit.component.css']
 })
-export class ListSubredditsComponent implements OnInit {
+export class ListSubredditComponent implements OnInit {
 
   subreddits?: Array<SubredditModel>;
   constructor(private subredditService: SubredditService) { }

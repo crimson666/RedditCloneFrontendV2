@@ -19,7 +19,7 @@ import { SubredditSideBarComponent } from './shared/subreddit-side-bar/subreddit
 import { PostTileComponent } from './shared/post-tile/post-tile.component';
 import { CreateSubredditComponent } from './subreddit/create-subreddit/create-subreddit.component';
 import { CreatePostComponent } from './post/create-post/create-post.component';
-import { ListSubredditsComponent } from './subreddit/list-subreddit/list-subreddit.component';
+import { ListSubredditComponent } from './subreddit/list-subreddit/list-subreddit.component';
 import { EditorModule } from '@tinymce/tinymce-angular';
 
 @NgModule({
@@ -35,7 +35,7 @@ import { EditorModule } from '@tinymce/tinymce-angular';
     PostTileComponent,
     CreateSubredditComponent,
     CreatePostComponent,
-    ListSubredditsComponent
+    ListSubredditComponent
   ],
   imports: [
     BrowserModule,
